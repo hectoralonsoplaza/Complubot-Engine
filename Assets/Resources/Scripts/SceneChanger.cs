@@ -1,12 +1,22 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario para gestionar escenas
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Esta función se llamará cuando presiones el botón
+    // Función para el botón Jugar
     public void CambiarAFloorCode()
     {
-        // "FloorCode" debe coincidir exactamente con el nombre de tu escena
         SceneManager.LoadScene("FloorCode");
+    }
+
+    // Nueva función para el botón Instrucciones
+    public void CambiarAInstrucciones()
+    {
+        SceneManager.LoadScene("Instructions");
+
+    }
+    public void VolverAlMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

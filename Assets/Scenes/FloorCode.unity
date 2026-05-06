@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 153174294}
   - component: {fileID: 153174293}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (7)
+  m_Name: Button_Prohibido_Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,6 @@ RectTransform:
   - {fileID: 555241766}
   - {fileID: 477781874}
   - {fileID: 1851431951}
-  - {fileID: 1392436588}
   - {fileID: 2041832061}
   - {fileID: 1922054051}
   - {fileID: 528140339}
@@ -536,6 +535,7 @@ RectTransform:
   - {fileID: 474581328}
   - {fileID: 1344876809}
   - {fileID: 841844087}
+  - {fileID: 793810644}
   m_Father: {fileID: 1930412720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 399849236}
   - component: {fileID: 399849235}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (5)
+  m_Name: Button_Prohibido_Naranja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 474581330}
   - component: {fileID: 474581329}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (1)
+  m_Name: Button_Alfombrilla_Amarilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 477781876}
   - component: {fileID: 477781875}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (14)
+  m_Name: Button_Flecha_Derecha_Morada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 511551421}
   - component: {fileID: 511551420}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (6)
+  m_Name: Button_Prohibido_Rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 528140341}
   - component: {fileID: 528140340}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (19)
+  m_Name: Button_Tornillo_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1350,7 +1350,7 @@ GameObject:
   - component: {fileID: 555241768}
   - component: {fileID: 555241767}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (13)
+  m_Name: Button_Flecha_Izquierda_Morada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 793810641}
   - component: {fileID: 793810640}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (8)
+  m_Name: Button_Destornillador_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1702,15 +1702,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793810639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.01296, y: 0.01296, z: 0.01296}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.39968, y: 1.39968, z: 1.39968}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 266624219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.700834, y: 0.875}
+  m_AnchoredPosition: {x: -261.99994, y: 94.5}
   m_SizeDelta: {x: 19.47, y: 102.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &841844086
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 841844089}
   - component: {fileID: 841844088}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (3)
+  m_Name: Button_Alfombrilla_Roja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1878,7 +1878,7 @@ GameObject:
   - component: {fileID: 893831259}
   - component: {fileID: 893831258}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (4)
+  m_Name: Button_Prohibido_Amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 1137735905}
   - component: {fileID: 1137735904}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (20)
+  m_Name: Button_Robot_Morado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2386,7 +2386,7 @@ GameObject:
   - component: {fileID: 1287504114}
   - component: {fileID: 1287504113}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (17)
+  m_Name: Button_Tile_Prohibido_Morado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2537,7 +2537,7 @@ GameObject:
   - component: {fileID: 1344876811}
   - component: {fileID: 1344876810}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (2)
+  m_Name: Button_Alfombrilla_Naranja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2674,157 +2674,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344876808}
   m_CullTransparentMesh: 1
---- !u!1 &1392436587
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392436588}
-  - component: {fileID: 1392436592}
-  - component: {fileID: 1392436591}
-  - component: {fileID: 1392436590}
-  - component: {fileID: 1392436589}
-  m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1392436588
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392436587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 266624219}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -262, y: 94.5}
-  m_SizeDelta: {x: 19.47, y: 102.09}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1392436589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392436587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209c0e58915c5c2419be3069d619296a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TileButtons
-  tile: {fileID: 11400000, guid: 84e2f21b7495a7542b34e2db475a3e68, type: 2}
-  layer: 1
-  maxUses: 1
-  currentUses: 0
-  painter: {fileID: 1112734603}
-  button: {fileID: 1392436590}
---- !u!114 &1392436590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392436587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1392436591}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1112734603}
-        m_TargetAssemblyTypeName: GridPainter, Assembly-CSharp
-        m_MethodName: SelectTile
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 84e2f21b7495a7542b34e2db475a3e68, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Tilemaps.TileBase, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1392436591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392436587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -5256018235916462950, guid: f76384c884ae03b45b8d99d546bdce3a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1392436592
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392436587}
-  m_CullTransparentMesh: 1
 --- !u!1 &1526831732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,7 +2688,7 @@ GameObject:
   - component: {fileID: 1526831735}
   - component: {fileID: 1526831734}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (12)
+  m_Name: Button_Flecha_Izquierda_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2990,7 +2839,7 @@ GameObject:
   - component: {fileID: 1529234486}
   - component: {fileID: 1529234485}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (16)
+  m_Name: Button_Tile_Prohibido_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3141,7 +2990,7 @@ GameObject:
   - component: {fileID: 1555144695}
   - component: {fileID: 1555144698}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00
+  m_Name: Button_Alfombrilla_Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3278,6 +3127,89 @@ MonoBehaviour:
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1555144695}
+--- !u!1 &1656009512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1656009514}
+  - component: {fileID: 1656009513}
+  m_Layer: 0
+  m_Name: CircuitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1656009513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656009512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4a8b173ea000d4da9db05ed37357c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CircuitManager
+  up:
+    blue: {fileID: 0}
+    purple: {fileID: 0}
+    direction: 0
+  down:
+    blue: {fileID: 0}
+    purple: {fileID: 0}
+    direction: 0
+  left:
+    blue: {fileID: 11400000, guid: 76bfbceb9e6c5d94dbf6330a4d186841, type: 2}
+    purple: {fileID: 11400000, guid: ae90e4262c215854caffb0658ccb58de, type: 2}
+    direction: 0
+  right:
+    blue: {fileID: 11400000, guid: 41c471ae730fe6146a5c016a8a8c2895, type: 2}
+    purple: {fileID: 11400000, guid: 34edd532e8546e54e9e6594928722916, type: 2}
+    direction: 0
+  logicMap: {fileID: 1989944367}
+  goalTiles:
+  - {fileID: 11400000, guid: 8aa3912da388e2c4d8caa55ed1b6d893, type: 2}
+  - {fileID: 11400000, guid: 9446846e056a322479a027edd5af5323, type: 2}
+  screwTiles:
+  - {fileID: 11400000, guid: 9e96e1d338726c54b91d033dec2645e6, type: 2}
+  - {fileID: 11400000, guid: ad20b0bbe90430e48b6742565f279fad, type: 2}
+  screwdriverTiles:
+  - {fileID: 11400000, guid: 154a6e358c49cae4ba41b7b46db93b2a, type: 2}
+  - {fileID: 11400000, guid: 84e2f21b7495a7542b34e2db475a3e68, type: 2}
+  forbiddenTiles:
+  - {fileID: 11400000, guid: e94ee1b2287cea74f90da7f57811786c, type: 2}
+  - {fileID: 11400000, guid: 566a6c9aa3cfb734d924c3c9bd4e1887, type: 2}
+  forbiddenYellowTiles:
+  - {fileID: 11400000, guid: fcacd25116979ae4b8e30b0157ba9bab, type: 2}
+  forbiddenOrangeTiles:
+  - {fileID: 11400000, guid: 1ab1227dea724af4aa73e34c2a41cef1, type: 2}
+  forbiddenRedTiles:
+  - {fileID: 11400000, guid: 551b42be543939b42a99179853f8c092, type: 2}
+  forbiddenGreenTiles:
+  - {fileID: 11400000, guid: 491c2278b66a3474eb5db5f43ce5fa91, type: 2}
+  robotVisual: {fileID: 0}
+  stepDelay: 0.3
+--- !u!4 &1656009514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656009512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.71996, y: -0.1735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735231205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,7 +3270,7 @@ GameObject:
   - component: {fileID: 1851431953}
   - component: {fileID: 1851431952}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (15)
+  m_Name: Button_Flecha_Derecha_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3489,7 +3421,7 @@ GameObject:
   - component: {fileID: 1922054053}
   - component: {fileID: 1922054052}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (18)
+  m_Name: Button_Tornillo_Morado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3902,7 +3834,7 @@ GameObject:
   - component: {fileID: 2041832063}
   - component: {fileID: 2041832062}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (9)
+  m_Name: Button_Destornillador_Morado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4053,7 +3985,7 @@ GameObject:
   - component: {fileID: 2119997176}
   - component: {fileID: 2119997175}
   m_Layer: 5
-  m_Name: Button_Alfombrilla_00 (11)
+  m_Name: Button_Robot_Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4199,4 +4131,4 @@ SceneRoots:
   - {fileID: 1930412720}
   - {fileID: 178743639}
   - {fileID: 1112734604}
-  - {fileID: 793810644}
+  - {fileID: 1656009514}

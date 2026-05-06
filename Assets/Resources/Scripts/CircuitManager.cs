@@ -1,10 +1,12 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class CircuitManager : MonoBehaviour
 {
+    // acciones
+
     public enum ActionType
     {
         Start,
@@ -16,6 +18,8 @@ public class CircuitManager : MonoBehaviour
         Jump,
         End
     }
+
+    // logica del grid
 
     public enum CellType
     {
@@ -32,45 +36,78 @@ public class CircuitManager : MonoBehaviour
     {
         None,
         Yellow,
+        Orange,
         Red,
-        Blue
+        Green
     }
 
+    public enum StartDirection
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
+
+
+    [System.Serializable]
+    public class StartTileSet
+    {
+        public TileBase blue;
+        public TileBase purple;
+        public StartDirection direction;
+    }
+
+    [Header("Start")]
+    public StartTileSet up;
+    public StartTileSet down;
+    public StartTileSet left;
+    public StartTileSet right;
+
+
     [Header("Tilemaps")]
-    public Tilemap baseMap;
     public Tilemap logicMap;
 
-    [Header("Tiles de referencia")]
-    public TileBase startTile;
-    public TileBase goalTile;
-    public TileBase screwTile;
-    public TileBase screwdriverTile;
-    public TileBase forbiddenTile;
 
-    public TileBase forbiddenYellow;
-    public TileBase forbiddenRed;
-    public TileBase forbiddenBlue;
+    [Header("Goal Tiles")]
+    public List<TileBase> goalTiles;
+
+    [Header("Objects")]
+    public List<TileBase> screwTiles;
+    public List<TileBase> screwdriverTiles;
+
+    [Header("Forbidden")]
+    public List<TileBase> forbiddenTiles;
+
+    [Header("Forbidden Colors")]
+    public List<TileBase> forbiddenYellowTiles;
+    public List<TileBase> forbiddenOrangeTiles;
+    public List<TileBase> forbiddenRedTiles;
+    public List<TileBase> forbiddenGreenTiles;
+
 
     [Header("Robot")]
     public Transform robotVisual;
-    public float moveSpeed = 5f;
+    public float stepDelay = 0.3f;
 
-    private Dictionary<Vector3Int, CellType> cells = new();
-    private Dictionary<Vector3Int, CellColor> colors = new();
+    // logica de datos
 
-    private List<ActionType> actions = new();
+    Dictionary<Vector3Int, CellType> cells = new();
+    Dictionary<Vector3Int, CellColor> colors = new();
 
-    private Vector3Int startPos;
-    private Vector2Int startDir;
+    List<ActionType> actions = new();
 
-    private Vector3Int robotPos;
-    private Vector2Int robotDir;
+    Vector3Int startPos;
+    Vector2Int startDir;
 
-    private bool hasScrew;
-    private bool hasDriver;
+    Vector3Int robotPos;
+    Vector2Int robotDir;
 
-    private bool needsScrew;
-    private bool needsDriver;
+    bool hasScrew;
+    bool hasDriver;
+
+    bool needsScrew;
+    bool needsDriver;
 
     Vector3Int[] directions = new Vector3Int[]
     {
@@ -85,66 +122,126 @@ public class CircuitManager : MonoBehaviour
         GenerateGridData();
     }
 
-    // grid
+    // logica del circuito
 
     void GenerateGridData()
     {
         cells.Clear();
         colors.Clear();
 
+        needsScrew = false;
+        needsDriver = false;
+
+        int startCount = 0;
+        int goalCount = 0;
+
         foreach (var pos in logicMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = logicMap.GetTile(pos);
             if (tile == null) continue;
 
-            if (tile == startTile)
+            // comienzo 
+            if (TryStart(tile, pos, up, StartDirection.Up, ref startCount)) continue;
+            if (TryStart(tile, pos, down, StartDirection.Down, ref startCount)) continue;
+            if (TryStart(tile, pos, left, StartDirection.Left, ref startCount)) continue;
+            if (TryStart(tile, pos, right, StartDirection.Right, ref startCount)) continue;
+
+            // meta
+            if (goalTiles.Contains(tile))
             {
-                cells[pos] = CellType.Start;
-                startPos = pos;
+                goalCount++;
 
-                // direccion del sprite segun su rotacion
-                startDir = Vector2Int.up;
-            }
-            else if (tile == goalTile)
+                if (goalCount > 1)
+                    Debug.LogError("âŒ Hay mÃ¡s de un GOAL");
+
                 cells[pos] = CellType.Goal;
+            }
 
-            else if (tile == screwTile)
+            // tornillo
+            else if (screwTiles.Contains(tile))
             {
                 cells[pos] = CellType.Screw;
                 needsScrew = true;
             }
-            else if (tile == screwdriverTile)
+            // destornillador
+            else if (screwdriverTiles.Contains(tile))
             {
                 cells[pos] = CellType.Screwdriver;
                 needsDriver = true;
             }
-            else if (tile == forbiddenTile)
-                cells[pos] = CellType.Forbidden;
 
-            else if (tile == forbiddenYellow)
+            // tiles prohibidos
+            else if (forbiddenTiles.Contains(tile))
+            {
+                cells[pos] = CellType.Forbidden;
+            }
+
+            // colores
+            else if (forbiddenYellowTiles.Contains(tile))
             {
                 cells[pos] = CellType.ForbiddenColor;
                 colors[pos] = CellColor.Yellow;
             }
-            else if (tile == forbiddenRed)
+            else if (forbiddenOrangeTiles.Contains(tile))
+            {
+                cells[pos] = CellType.ForbiddenColor;
+                colors[pos] = CellColor.Orange;
+            }
+            else if (forbiddenRedTiles.Contains(tile))
             {
                 cells[pos] = CellType.ForbiddenColor;
                 colors[pos] = CellColor.Red;
             }
-            else if (tile == forbiddenBlue)
+            else if (forbiddenGreenTiles.Contains(tile))
             {
                 cells[pos] = CellType.ForbiddenColor;
-                colors[pos] = CellColor.Blue;
+                colors[pos] = CellColor.Green;
             }
         }
+
+        if (startCount == 0)
+            Debug.LogError("No hay comienzo en el circuito");
+
+        if (goalCount == 0)
+            Debug.LogError("No hay meta en el circuito");
     }
 
-    // botones de accion
+    bool TryStart(TileBase tile, Vector3Int pos, StartTileSet set, StartDirection dir, ref int count)
+    {
+        if (tile != set.blue && tile != set.purple)
+            return false;
+
+        count++;
+
+        if (count > 1)
+            Debug.LogError("Hay mas de un comienzo en el circuito");
+
+        startPos = pos;
+        startDir = DirectionToVector(dir);
+
+        cells[pos] = CellType.Start;
+
+        return true;
+    }
+
+    Vector2Int DirectionToVector(StartDirection dir)
+    {
+        switch (dir)
+        {
+            case StartDirection.Up: return Vector2Int.up;
+            case StartDirection.Down: return Vector2Int.down;
+            case StartDirection.Left: return Vector2Int.left;
+            case StartDirection.Right: return Vector2Int.right;
+        }
+
+        return Vector2Int.up;
+    }
+
+    // botones
 
     public void AddAction(ActionType action)
     {
         actions.Add(action);
-        Debug.Log("Añadido: " + action);
     }
 
     public void ClearActions()
@@ -158,7 +255,7 @@ public class CircuitManager : MonoBehaviour
             actions[0] != ActionType.Start ||
             actions[^1] != ActionType.End)
         {
-            Debug.Log("Programa inválido");
+            
             return;
         }
 
@@ -187,15 +284,15 @@ public class CircuitManager : MonoBehaviour
 
             if (CheckLose())
             {
-                Debug.Log("¡Has perdido!");
+                Debug.Log("Has perdido... Â¡Sigue intentÃ¡ndolo!");
                 yield break;
             }
         }
 
         if (CheckWin())
-            Debug.Log("¡Has ganado!");
+            Debug.Log("Â¡Has ganado!");
         else
-            Debug.Log("No lo conseguiste... ¡Sigue así!");
+            Debug.Log("No has cumplido los objetivos... Â¡Sigue intentÃ¡ndolo!");
     }
 
     IEnumerator ExecuteAction(ActionType action)
@@ -228,7 +325,7 @@ public class CircuitManager : MonoBehaviour
         }
 
         UpdateVisual();
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(stepDelay);
     }
 
     void TryGrab()
@@ -236,10 +333,18 @@ public class CircuitManager : MonoBehaviour
         if (!cells.ContainsKey(robotPos)) return;
 
         if (cells[robotPos] == CellType.Screw)
+        {
             hasScrew = true;
+            cells[robotPos] = CellType.Empty;
+            logicMap.SetTile(robotPos, null);
+        }
 
         if (cells[robotPos] == CellType.Screwdriver)
+        {
             hasDriver = true;
+            cells[robotPos] = CellType.Empty;
+            logicMap.SetTile(robotPos, null);
+        }
     }
 
     // logica de reglas
@@ -286,12 +391,12 @@ public class CircuitManager : MonoBehaviour
         return true;
     }
 
-    
+    // visuales
 
     void UpdateVisual()
     {
         Vector3 world = logicMap.GetCellCenterWorld(robotPos);
-        robotVisual.position = Vector3.Lerp(robotVisual.position, world, 1f);
+        robotVisual.position = world;
 
         float angle = Mathf.Atan2(robotDir.y, robotDir.x) * Mathf.Rad2Deg;
         robotVisual.rotation = Quaternion.Euler(0, 0, angle - 90);

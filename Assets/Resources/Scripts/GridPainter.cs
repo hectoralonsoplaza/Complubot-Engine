@@ -8,16 +8,18 @@ public class GridPainter : MonoBehaviour
     [Header("References")]
     public Grid grid;
     public Tilemap tilemap;
+    public Tilemap tilemap_logic;
 
     private TileBase selectedTile;
+    private TileButtons.TileLayer selectedLayer;
 
     // seleccionar
-    public void SelectTile(TileBase tile)
+    public void SelectTile(TileBase tile, TileButtons.TileLayer layer)
     {
         selectedTile = tile;
+        selectedLayer = layer;
     }
 
-    
     void Update()
     {
         if (Mouse.current == null) return;
@@ -49,7 +51,6 @@ public class GridPainter : MonoBehaviour
 
         TileButtons button = FindButton(selectedTile);
 
-        // 🔴 BLOQUEO REAL
         if (button != null && !button.CanUse())
         {
             Debug.Log("No quedan usos para este tile");
@@ -59,7 +60,11 @@ public class GridPainter : MonoBehaviour
         Vector3 worldPos = GetMouseWorldPosition();
         Vector3Int cellPos = grid.WorldToCell(worldPos);
 
-        tilemap.SetTile(cellPos, selectedTile);
+        Tilemap targetMap = (selectedLayer == TileButtons.TileLayer.Base)
+            ? tilemap
+            : tilemap_logic;
+
+        targetMap.SetTile(cellPos, selectedTile);
 
         if (button != null)
             button.RegisterPlace();
@@ -70,16 +75,31 @@ public class GridPainter : MonoBehaviour
         Vector3 worldPos = GetMouseWorldPosition();
         Vector3Int cellPos = grid.WorldToCell(worldPos);
 
-        TileBase tile = tilemap.GetTile(cellPos);
+        // borrar en orden de arriba a abajo
+        TileBase logicTile = tilemap_logic.GetTile(cellPos);
 
-        if (tile == null) return;
+        if (logicTile != null)
+        {
+            tilemap_logic.SetTile(cellPos, null);
 
-        tilemap.SetTile(cellPos, null);
+            TileButtons button = FindButton(logicTile);
+            if (button != null)
+                button.RegisterRemove();
 
-        TileButtons button = FindButton(tile);
+            return;
+        }
 
-        if (button != null)
-            button.RegisterRemove();
+        // si no hay nada arriba borrar abajo
+        TileBase baseTile = tilemap.GetTile(cellPos);
+
+        if (baseTile != null)
+        {
+            tilemap.SetTile(cellPos, null);
+
+            TileButtons button = FindButton(baseTile);
+            if (button != null)
+                button.RegisterRemove();
+        }
     }
 
     TileButtons FindButton(TileBase tile)

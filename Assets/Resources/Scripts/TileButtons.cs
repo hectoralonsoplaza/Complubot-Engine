@@ -4,8 +4,17 @@ using UnityEngine.Tilemaps;
 
 public class TileButtons : MonoBehaviour
 {
+    public enum TileLayer
+    {
+        Base,
+        Logic
+    }
+
     [Header("Tiles")]
     public TileBase tile;
+
+    [Header("Capa")]
+    public TileLayer layer;
 
     [Header("Limites")]
     public int maxUses = 7;
@@ -25,30 +34,26 @@ public class TileButtons : MonoBehaviour
 
     public void SelectTile()
     {
-        painter.SelectTile(tile);
+        painter.SelectTile(tile, layer);
     }
 
-    // puede o no usarse
     public bool CanUse()
     {
         return currentUses < maxUses;
     }
 
-    // registro de pintar
     public void RegisterPlace()
     {
         currentUses++;
         UpdateState();
     }
 
-    // registro de borrar
     public void RegisterRemove()
     {
         currentUses = Mathf.Max(0, currentUses - 1);
         UpdateState();
     }
 
-    // deactivar el boton
     void UpdateState()
     {
         if (button != null)

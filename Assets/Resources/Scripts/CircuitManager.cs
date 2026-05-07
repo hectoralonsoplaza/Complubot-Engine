@@ -64,6 +64,9 @@ public class CircuitManager : MonoBehaviour
     Dictionary<Vector3Int, CellType> cells = new();
     Dictionary<ActionType, int> actions = new();
 
+    // acciones en orden
+    List<ActionType> actionOrder = new();
+
     Vector3Int startPos;
     Vector2Int startDir;
 
@@ -77,7 +80,6 @@ public class CircuitManager : MonoBehaviour
     bool startReady;
 
     // inicio
-
     void Start()
     {
         StartCoroutine(CheckUntilStart());
@@ -100,7 +102,6 @@ public class CircuitManager : MonoBehaviour
     }
 
     // logica del grid
-
     void GenerateGridData()
     {
         cells.Clear();
@@ -177,7 +178,6 @@ public class CircuitManager : MonoBehaviour
     }
 
     // añadir y borrar acciones
-
     public void AddAction(ActionType action)
     {
         if (action == ActionType.Start || action == ActionType.End)
@@ -190,11 +190,15 @@ public class CircuitManager : MonoBehaviour
             actions[action] = 0;
 
         actions[action]++;
+
+        // logica del orden de las acciones
+        actionOrder.Add(action);
     }
 
     public void ClearActions()
     {
         actions.Clear();
+        actionOrder.Clear();
     }
 
     List<ActionType> BuildActionList()
@@ -203,23 +207,9 @@ public class CircuitManager : MonoBehaviour
 
         list.Add(ActionType.Start);
 
-        ActionType[] order =
+        foreach (var action in actionOrder)
         {
-            ActionType.Forward,
-            ActionType.Backward,
-            ActionType.TurnRight,
-            ActionType.TurnLeft,
-            ActionType.Grab,
-            ActionType.Jump
-        };
-
-        foreach (var action in order)
-        {
-            if (!actions.ContainsKey(action))
-                continue;
-
-            for (int i = 0; i < actions[action]; i++)
-                list.Add(action);
+            list.Add(action);
         }
 
         list.Add(ActionType.End);
@@ -227,15 +217,14 @@ public class CircuitManager : MonoBehaviour
         return list;
     }
 
-    // ejecucion de los assets
-
+    // ejecucion de acciones
     public void Execute()
     {
         if (isRunning) return;
 
         if (!startReady)
         {
-            Debug.Log("Aún no hay START");
+            Debug.Log("Aún no hay Start");
             return;
         }
 
@@ -338,8 +327,6 @@ public class CircuitManager : MonoBehaviour
         }
     }
 
-    // logica ed ganar o perder
-
     bool CheckLose()
     {
         if (!cells.ContainsKey(robotPos))
@@ -359,15 +346,12 @@ public class CircuitManager : MonoBehaviour
         return hasScrew && hasDriver;
     }
 
-    // niña
-
     void UpdateVisual()
     {
         if (child == null) return;
 
         child.position = logicMap.GetCellCenterWorld(robotPos);
 
-        // direcciones de la niña
         if (robotDir == Vector2Int.right)
             child.rotation = Quaternion.Euler(0, 0, 0);
         else if (robotDir == Vector2Int.left)

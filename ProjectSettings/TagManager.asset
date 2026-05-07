@@ -47,5 +47,8 @@ TagManager:
   - name: Tilemap logic
     uniqueID: 4021987515
     locked: 0
+  - name: "Ni\xF1a"
+    uniqueID: 3593821303
+    locked: 0
   m_RenderingLayers:
   - Default

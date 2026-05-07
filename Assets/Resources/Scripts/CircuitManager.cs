@@ -62,7 +62,6 @@ public class CircuitManager : MonoBehaviour
     public float stepDelay = 0.3f;
 
     Dictionary<Vector3Int, CellType> cells = new();
-
     Dictionary<ActionType, int> actions = new();
 
     Vector3Int startPos;
@@ -77,25 +76,23 @@ public class CircuitManager : MonoBehaviour
     bool isRunning;
     bool startReady;
 
+    // inicio
 
     void Start()
     {
         StartCoroutine(CheckUntilStart());
     }
 
-    // checkear si hay start
-
     IEnumerator CheckUntilStart()
     {
-        while (!startReady)
+        while (true)
         {
             GenerateGridData();
 
-            if (startReady)
+            if (!startReady)
             {
-                Debug.Log("Start encontrado, sistema listo");
-                ResetRobot();
-                yield break;
+                yield return new WaitForSeconds(0.3f);
+                continue;
             }
 
             yield return new WaitForSeconds(0.3f);
@@ -141,9 +138,22 @@ public class CircuitManager : MonoBehaviour
         }
 
         if (startCount > 0)
-            startReady = true;
+        {
+            if (!startReady)
+            {
+                Debug.Log("Start detectado");
+                startReady = true;
+                ResetRobot();
+            }
+        }
         else
-            Debug.LogWarning("Buscando START...");
+        {
+            if (startReady)
+            {
+                Debug.LogWarning("Start eliminado, buscando de nuevo...");
+                startReady = false;
+            }
+        }
     }
 
     bool TryStart(TileBase tile, Vector3Int pos, StartTileSet set, ref int count)
@@ -166,7 +176,7 @@ public class CircuitManager : MonoBehaviour
         return true;
     }
 
-    // acciones
+    // añadir y borrar acciones
 
     public void AddAction(ActionType action)
     {
@@ -193,13 +203,23 @@ public class CircuitManager : MonoBehaviour
 
         list.Add(ActionType.Start);
 
-        foreach (var pair in actions)
+        ActionType[] order =
         {
-            if (pair.Key == ActionType.Start || pair.Key == ActionType.End)
+            ActionType.Forward,
+            ActionType.Backward,
+            ActionType.TurnRight,
+            ActionType.TurnLeft,
+            ActionType.Grab,
+            ActionType.Jump
+        };
+
+        foreach (var action in order)
+        {
+            if (!actions.ContainsKey(action))
                 continue;
 
-            for (int i = 0; i < pair.Value; i++)
-                list.Add(pair.Key);
+            for (int i = 0; i < actions[action]; i++)
+                list.Add(action);
         }
 
         list.Add(ActionType.End);
@@ -207,7 +227,7 @@ public class CircuitManager : MonoBehaviour
         return list;
     }
 
-    // ejecucion
+    // ejecucion de los assets
 
     public void Execute()
     {
@@ -251,7 +271,6 @@ public class CircuitManager : MonoBehaviour
     {
         isRunning = true;
 
-        // ejecutar acciones
         foreach (var action in executionList)
         {
             yield return ExecuteAction(action);
@@ -259,19 +278,12 @@ public class CircuitManager : MonoBehaviour
 
         isRunning = false;
 
-        // checkear al final si ganas o pierdes
         if (CheckLose())
-        {
             Debug.Log("Has perdido...");
-        }
         else if (CheckWin())
-        {
             Debug.Log("¡Has ganado!");
-        }
         else
-        {
             Debug.Log("No cumpliste los objetivos...");
-        }
     }
 
     IEnumerator ExecuteAction(ActionType action)
@@ -312,15 +324,21 @@ public class CircuitManager : MonoBehaviour
         if (!cells.ContainsKey(robotPos)) return;
 
         if (cells[robotPos] == CellType.Screw)
+        {
             hasScrew = true;
+            cells[robotPos] = CellType.Empty;
+            logicMap.SetTile(robotPos, null);
+        }
 
         if (cells[robotPos] == CellType.Screwdriver)
+        {
             hasDriver = true;
-
-        cells[robotPos] = CellType.Empty;
+            cells[robotPos] = CellType.Empty;
+            logicMap.SetTile(robotPos, null);
+        }
     }
 
-    // logica de ganar o perder
+    // logica ed ganar o perder
 
     bool CheckLose()
     {
@@ -341,7 +359,7 @@ public class CircuitManager : MonoBehaviour
         return hasScrew && hasDriver;
     }
 
-    // niño
+    // niña
 
     void UpdateVisual()
     {
@@ -349,10 +367,15 @@ public class CircuitManager : MonoBehaviour
 
         child.position = logicMap.GetCellCenterWorld(robotPos);
 
+        // direcciones de la niña
         if (robotDir == Vector2Int.right)
             child.rotation = Quaternion.Euler(0, 0, 0);
         else if (robotDir == Vector2Int.left)
             child.rotation = Quaternion.Euler(0, 0, 180);
+        else if (robotDir == Vector2Int.up)
+            child.rotation = Quaternion.Euler(0, 0, 90);
+        else if (robotDir == Vector2Int.down)
+            child.rotation = Quaternion.Euler(0, 0, -90);
     }
 
     Vector3Int ToV3(Vector2Int v)

@@ -195,6 +195,11 @@ public class CircuitManager : MonoBehaviour
         actionOrder.Add(action);
     }
 
+    public List<ActionType> GetActions()
+    {
+        return new List<ActionType>(actionOrder);
+    }
+
     public void ClearActions()
     {
         actions.Clear();

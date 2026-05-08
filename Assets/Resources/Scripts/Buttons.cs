@@ -8,13 +8,17 @@ public class Buttons : MonoBehaviour
 
     public CircuitManager.ActionType action;
 
+    private Image buttonImage;
+
     void Start()
     {
+        buttonImage = GetComponent<Image>();
+
         GetComponent<Button>().onClick.AddListener(() =>
         {
             manager.AddAction(action);
 
-            uiManager.AddVisualAction(action);
+            uiManager.AddVisualAction(buttonImage.sprite);
         });
     }
 }

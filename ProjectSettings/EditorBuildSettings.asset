@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Resources/Sounds/Scenes/MainMenu.unity
     guid: 11280fd8ff637714091bd6afcf0fd051
   - enabled: 1
-    path: Assets/Resources/Sounds/Scenes/FloorCode.unity
+    path: Assets/Scenes/FloorCode.unity
     guid: 76ee9a5e225f9314282c30b0da1a8b90
   - enabled: 1
     path: Assets/Resources/Sounds/Scenes/Instructions.unity

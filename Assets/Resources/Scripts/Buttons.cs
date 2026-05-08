@@ -12,7 +12,7 @@ public class Buttons : MonoBehaviour
 
     void Start()
     {
-        buttonImage = GetComponent<Image>();
+        buttonImage = GetComponentInChildren<Image>();
 
         GetComponent<Button>().onClick.AddListener(() =>
         {

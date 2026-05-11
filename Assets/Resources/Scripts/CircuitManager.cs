@@ -180,18 +180,12 @@ public class CircuitManager : MonoBehaviour
     // añadir y borrar acciones
     public void AddAction(ActionType action)
     {
-        if (action == ActionType.Start || action == ActionType.End)
-        {
-            actions[action] = 1;
-            return;
-        }
-
         if (!actions.ContainsKey(action))
             actions[action] = 0;
 
         actions[action]++;
 
-        // logica del orden de las acciones
+        // guardar las acciones en orden
         actionOrder.Add(action);
     }
 
@@ -206,20 +200,30 @@ public class CircuitManager : MonoBehaviour
         actionOrder.Clear();
     }
 
+    // eliminar la ultima accon
+    public void RemoveLastAction()
+    {
+        if (actionOrder.Count == 0)
+            return;
+
+        ActionType lastAction = actionOrder[actionOrder.Count - 1];
+
+        actionOrder.RemoveAt(actionOrder.Count - 1);
+
+        if (actions.ContainsKey(lastAction))
+        {
+            actions[lastAction]--;
+
+            if (actions[lastAction] <= 0)
+            {
+                actions.Remove(lastAction);
+            }
+        }
+    }
+
     List<ActionType> BuildActionList()
     {
-        List<ActionType> list = new();
-
-        list.Add(ActionType.Start);
-
-        foreach (var action in actionOrder)
-        {
-            list.Add(action);
-        }
-
-        list.Add(ActionType.End);
-
-        return list;
+        return new List<ActionType>(actionOrder);
     }
 
     // ejecucion de acciones

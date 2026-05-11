@@ -25,4 +25,14 @@ public class ActionManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+
+    public void RemoveLastVisualAction()
+    {
+        if (actionPanel.childCount == 0)
+            return;
+
+        Transform lastChild = actionPanel.GetChild(actionPanel.childCount - 1);
+
+        Destroy(lastChild.gameObject);
+    }
 }

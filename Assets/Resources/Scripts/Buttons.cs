@@ -21,4 +21,5 @@ public class Buttons : MonoBehaviour
             uiManager.AddVisualAction(buttonImage.sprite);
         });
     }
+
 }

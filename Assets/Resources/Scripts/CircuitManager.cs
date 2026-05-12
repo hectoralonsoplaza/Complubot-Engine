@@ -61,10 +61,11 @@ public class CircuitManager : MonoBehaviour
     public Transform child;
     public float stepDelay = 0.3f;
 
+    public RecorderManager recorder;
+
     Dictionary<Vector3Int, CellType> cells = new();
     Dictionary<ActionType, int> actions = new();
 
-    // acciones en orden
     List<ActionType> actionOrder = new();
 
     Vector3Int startPos;
@@ -81,7 +82,6 @@ public class CircuitManager : MonoBehaviour
 
     bool touchedForbidden;
 
-    // inicio
     void Start()
     {
         StartCoroutine(CheckUntilStart());
@@ -103,7 +103,6 @@ public class CircuitManager : MonoBehaviour
         }
     }
 
-    // logica del grid
     void GenerateGridData()
     {
         cells.Clear();
@@ -179,15 +178,12 @@ public class CircuitManager : MonoBehaviour
         return true;
     }
 
-    // añadir y borrar acciones
     public void AddAction(ActionType action)
     {
         if (!actions.ContainsKey(action))
             actions[action] = 0;
 
         actions[action]++;
-
-        // guardar las acciones en orden
         actionOrder.Add(action);
     }
 
@@ -202,13 +198,12 @@ public class CircuitManager : MonoBehaviour
         actionOrder.Clear();
     }
 
-    // eliminar la ultima accon
     public void RemoveLastAction()
     {
         if (actionOrder.Count == 0)
             return;
 
-        ActionType lastAction = actionOrder[actionOrder.Count - 1];
+        ActionType lastAction = actionOrder[^1];
 
         actionOrder.RemoveAt(actionOrder.Count - 1);
 
@@ -217,9 +212,7 @@ public class CircuitManager : MonoBehaviour
             actions[lastAction]--;
 
             if (actions[lastAction] <= 0)
-            {
                 actions.Remove(lastAction);
-            }
         }
     }
 
@@ -228,7 +221,6 @@ public class CircuitManager : MonoBehaviour
         return new List<ActionType>(actionOrder);
     }
 
-    // ejecucion de acciones
     public void Execute()
     {
         if (isRunning) return;
@@ -250,7 +242,9 @@ public class CircuitManager : MonoBehaviour
         }
 
         ResetRobot();
+
         StartCoroutine(Run(executionList));
+
     }
 
     void ResetRobot()
@@ -261,7 +255,6 @@ public class CircuitManager : MonoBehaviour
         hasScrew = false;
         hasDriver = false;
 
-        // NUEVO
         touchedForbidden = false;
 
         if (child != null)
@@ -295,13 +288,11 @@ public class CircuitManager : MonoBehaviour
         {
             case ActionType.Forward:
                 robotPos += ToV3(robotDir);
-
                 CheckCurrentTile();
                 break;
 
             case ActionType.Backward:
                 robotPos -= ToV3(robotDir);
-
                 CheckCurrentTile();
                 break;
 
@@ -318,13 +309,8 @@ public class CircuitManager : MonoBehaviour
                 break;
 
             case ActionType.Jump:
-
-                // salta directamente 2 casillas
                 robotPos += ToV3(robotDir) * 2;
-
-               
                 CheckCurrentTile();
-
                 break;
         }
 
@@ -351,14 +337,11 @@ public class CircuitManager : MonoBehaviour
         }
     }
 
-    // Comprobar los tiles
     void CheckCurrentTile()
     {
-        // perder si acabas fuera del tablero
         if (!cells.ContainsKey(robotPos))
             return;
 
-        // perder si pisas un prohibido
         if (cells[robotPos] == CellType.Forbidden)
         {
             touchedForbidden = true;

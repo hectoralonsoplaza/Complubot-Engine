@@ -79,6 +79,8 @@ public class CircuitManager : MonoBehaviour
     bool isRunning;
     bool startReady;
 
+    bool touchedForbidden;
+
     // inicio
     void Start()
     {
@@ -259,6 +261,9 @@ public class CircuitManager : MonoBehaviour
         hasScrew = false;
         hasDriver = false;
 
+        // NUEVO
+        touchedForbidden = false;
+
         if (child != null)
             child.rotation = Quaternion.identity;
 
@@ -290,10 +295,14 @@ public class CircuitManager : MonoBehaviour
         {
             case ActionType.Forward:
                 robotPos += ToV3(robotDir);
+
+                CheckCurrentTile();
                 break;
 
             case ActionType.Backward:
                 robotPos -= ToV3(robotDir);
+
+                CheckCurrentTile();
                 break;
 
             case ActionType.TurnRight:
@@ -309,7 +318,13 @@ public class CircuitManager : MonoBehaviour
                 break;
 
             case ActionType.Jump:
+
+                // salta directamente 2 casillas
                 robotPos += ToV3(robotDir) * 2;
+
+               
+                CheckCurrentTile();
+
                 break;
         }
 
@@ -336,15 +351,23 @@ public class CircuitManager : MonoBehaviour
         }
     }
 
+    // Comprobar los tiles
+    void CheckCurrentTile()
+    {
+        // perder si acabas fuera del tablero
+        if (!cells.ContainsKey(robotPos))
+            return;
+
+        // perder si pisas un prohibido
+        if (cells[robotPos] == CellType.Forbidden)
+        {
+            touchedForbidden = true;
+        }
+    }
+
     bool CheckLose()
     {
-        if (!cells.ContainsKey(robotPos))
-            return true;
-
-        if (cells[robotPos] == CellType.Forbidden)
-            return true;
-
-        return false;
+        return touchedForbidden;
     }
 
     bool CheckWin()

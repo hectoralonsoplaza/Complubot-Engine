@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -8.8}
+  m_AnchoredPosition: {x: 0, y: -8.799999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59768738
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 491c2278b66a3474eb5db5f43ce5fa91, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 153174294}
@@ -953,7 +953,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 791.7, y: 1080}
+  m_SizeDelta: {x: 788.04, y: 1080}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &266624220
 MonoBehaviour:
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 1ab1227dea724af4aa73e34c2a41cef1, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 399849236}
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 34edd532e8546e54e9e6594928722916, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 477781876}
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 551b42be543939b42a99179853f8c092, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 511551421}
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: ae90e4262c215854caffb0658ccb58de, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 555241768}
@@ -3231,7 +3231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: fcacd25116979ae4b8e30b0157ba9bab, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 893831259}
@@ -3769,7 +3769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 9446846e056a322479a027edd5af5323, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1137735905}
@@ -4363,7 +4363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 566a6c9aa3cfb734d924c3c9bd4e1887, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1287504114}
@@ -4982,7 +4982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 76bfbceb9e6c5d94dbf6330a4d186841, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1526831735}
@@ -5269,7 +5269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: e94ee1b2287cea74f90da7f57811786c, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1529234486}
@@ -5968,7 +5968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 41c471ae730fe6146a5c016a8a8c2895, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1851431953}
@@ -6496,7 +6496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.3}
+  m_AnchoredPosition: {x: 0, y: 3.2999992}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959466981
@@ -7383,7 +7383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileButtons
   tile: {fileID: 11400000, guid: 8aa3912da388e2c4d8caa55ed1b6d893, type: 2}
   layer: 1
-  maxUses: 1
+  maxUses: 100000
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 2119997176}

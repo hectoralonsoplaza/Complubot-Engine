@@ -1874,6 +1874,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446126235}
   m_CullTransparentMesh: 1
+--- !u!1 &459610939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459610940}
+  - component: {fileID: 459610941}
+  m_Layer: 0
+  m_Name: NEXT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &459610940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459610939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 539261674}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459610941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459610939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: SIGUIENTE
+    Object: {fileID: 0}
+  - Language: English
+    Text: NEXT
+    Object: {fileID: 0}
 --- !u!1 &492219392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2307,7 @@ Transform:
   - {fileID: 1345462203}
   - {fileID: 632105864}
   - {fileID: 1256214071}
+  - {fileID: 459610940}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541854455
@@ -2868,10 +2921,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Spanish
-    Text: SIGUIENTE
+    Text: "ATR\xC1S"
     Object: {fileID: 0}
   - Language: English
-    Text: NEXT
+    Text: BACK
     Object: {fileID: 0}
 --- !u!1 &644952103
 GameObject:
@@ -3263,9 +3316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NEXT
-
-'
+  m_text: NEXT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
   m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
@@ -3357,7 +3408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
-  translationName: anteior
+  translationName: NEXT
   FallbackText: Anterior
 --- !u!4 &683427341 stripped
 Transform:
@@ -9130,8 +9181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 364.76, y: -228.6}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 364.76, y: -227}
+  m_SizeDelta: {x: 160, y: 26.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2053014767
 MonoBehaviour:

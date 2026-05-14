@@ -1414,10 +1414,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SEE EXPLANATION
+  m_text: "VER EXPLICACI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2475,7 +2475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: 431}
+  m_AnchoredPosition: {x: 55, y: 437}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626629917
@@ -2498,19 +2498,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EXAMPLE 3
-
-'
+  m_text: EJEMPLO 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294953728
-  m_fontColor: {r: 0, g: 0.7957878, b: 1, a: 1}
+    rgba: 4281741076
+  m_fontColor: {r: 0.080099694, g: 0.1854616, b: 0.21226418, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2791,7 +2789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: English
+  currentLanguage: Spanish
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -3088,10 +3086,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT BACK
+  m_text: "SALIR ATR\xC1S"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

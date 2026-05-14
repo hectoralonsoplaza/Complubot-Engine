@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: English
+  currentLanguage: Spanish
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -1039,10 +1039,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SEE EXPLANATION
+  m_text: "VER EXPLICACI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1963,12 +1963,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EXAMPLE 2
-
-'
+  m_text: EJEMPLO 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2706,10 +2704,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT BACK
+  m_text: "SALIR ATR\xC1S"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

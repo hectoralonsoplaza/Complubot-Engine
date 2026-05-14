@@ -180,8 +180,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -317,8 +317,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "BORRAR \xDALTIMA ACCI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3009,8 +3009,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PROGRAMAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4762,8 +4762,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BORRAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4925,8 +4925,8 @@ Transform:
   m_GameObject: {fileID: 1422989897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.68, y: 2.3, z: 0}
-  m_LocalScale: {x: 0.7162764, y: 0.68622, z: 0.68622}
+  m_LocalPosition: {x: 3.68, y: 2.02, z: 0}
+  m_LocalScale: {x: 0.7162764, y: 0.62617576, z: 0.68622}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6703,8 +6703,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GRABAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7434,8 +7434,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "DETENER GRABACI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
-  m_sharedMaterial: {fileID: 989477659253848389, guid: 2036533d225822c498a7a66a4ca67a7f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

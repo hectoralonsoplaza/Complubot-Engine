@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c290d4ecf99f3a345896fda54dfd0e2c
+guid: bb532e34100e75c4aa5891f58cf4ddd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -872575199754879286
-    second: Baby blue wallpaper_0
+      213: -850568636329969191
+    second: Gemini_Generated_Image_pnwea6pnwea6pnwe (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Baby blue wallpaper_0
+      name: Gemini_Generated_Image_pnwea6pnwea6pnwe (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 736
-        height: 1308
+        width: 2528
+        height: 1686
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ace7bca9a7df3e3f0800000000000000
-      internalID: -872575199754879286
+      spriteID: 9d9b67ee45c2234f0800000000000000
+      internalID: -850568636329969191
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Baby blue wallpaper_0: -872575199754879286
+      Gemini_Generated_Image_pnwea6pnwea6pnwe (1)_0: -850568636329969191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

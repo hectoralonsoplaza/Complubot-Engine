@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: ea4be0389be55bb4b82e345b2f401bc2
+  - enabled: 1
+    path: Assets/Scenes/Idiomas.unity
+    guid: 0069f02879653b944bc443e6cf522aac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

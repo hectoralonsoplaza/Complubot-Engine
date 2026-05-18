@@ -1378,6 +1378,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196674710}
   m_CullTransparentMesh: 1
+--- !u!1001 &209406322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8653719598885068355, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_Name
+      value: robot_mrado
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08205792
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08205792
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.08205792
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.16
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 4843985084834002234, guid: 2749f871f611f354e8370783d4d84d97, type: 3}
 --- !u!1 &284318074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BACK
+  m_text: "ATR\xC1S"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1717,7 +1786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.86, y: -59}
+  m_AnchoredPosition: {x: 242.86, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446126237
@@ -2272,7 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: English
+  currentLanguage: Spanish
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -2961,7 +3030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301, y: -130.14}
+  m_AnchoredPosition: {x: -301, y: -138.14}
   m_SizeDelta: {x: 264.61, y: 38.266}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644952105
@@ -2984,7 +3053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect the items, such as the screwdriver and the screw
+  m_text: 'Recoge los objetos como el destornillador y el tornillo '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -3316,7 +3385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NEXT
+  m_text: SIGUIENTE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -3450,7 +3519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320.26, y: -59}
+  m_AnchoredPosition: {x: 320.26, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706239103
@@ -3642,7 +3711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -338, y: -59.409}
+  m_AnchoredPosition: {x: -338, y: -71}
   m_SizeDelta: {x: 91.46, y: 82.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &741113558
@@ -5333,7 +5402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Avoid stepping on mats of the same color
+  m_text: 'Evita pisar alfombrillas del mismo color   '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -5429,7 +5498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -130}
+  m_AnchoredPosition: {x: 278, y: -138}
   m_SizeDelta: {x: 227.73, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245663265
@@ -5556,7 +5625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: They mark the beginning and the end of the road
+  m_text: Indican el inicio y el final del camino
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -6334,7 +6403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.7, y: 206.1}
+  m_AnchoredPosition: {x: -108, y: 206.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520865256
@@ -6357,7 +6426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INSTRUCTIONS
+  m_text: INSTRUCCIONES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639fd36a67bd9294389a4800c3a75cba, type: 2}
   m_sharedMaterial: {fileID: -4180226674047088984, guid: 639fd36a67bd9294389a4800c3a75cba, type: 2}
@@ -7443,7 +7512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165.19, y: -59}
+  m_AnchoredPosition: {x: 165.19, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693209254
@@ -7635,7 +7704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 399.86, y: -59}
+  m_AnchoredPosition: {x: 399.86, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695367896
@@ -7827,7 +7896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34.26001, y: -62.023994}
+  m_AnchoredPosition: {x: -34.26001, y: -73.615}
   m_SizeDelta: {x: 91.46, y: 87.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789035747
@@ -8364,7 +8433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -134}
+  m_AnchoredPosition: {x: 13, y: -142}
   m_SizeDelta: {x: 310.4, y: 36.972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843483766
@@ -8387,7 +8456,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A fun action is performed as suggested by the group (Example: Start Dancing)'
+  m_text: "Se realiza una acci\xF3n divertida hablada por el grupo (Ejemplo: Ponte
+    a bailar) "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -8728,14 +8798,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7877358, g: 0.78402007, b: 0.78402007, a: 1}
+  m_Color: {r: 0.25809896, g: 0.6839622, b: 0.66951764, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4432264898080385704, guid: 67e37db4c10a3d74090c0f27564dde69, type: 3}
+  m_Sprite: {fileID: -872575199754879286, guid: c290d4ecf99f3a345896fda54dfd0e2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8997,7 +9067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: SALIR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -9840,3 +9910,4 @@ SceneRoots:
   - {fileID: 1790594709}
   - {fileID: 1633634290}
   - {fileID: 539261674}
+  - {fileID: 209406322}

@@ -10,108 +10,94 @@ public class GridPainter : MonoBehaviour
     public Tilemap tilemap;
     public Tilemap tilemap_logic;
 
-    private TileBase selectedTile;
-    private TileButtons.TileLayer selectedLayer;
+    private TileBase draggingTile;
+    private TileButtons.TileLayer draggingLayer;
 
-    // seleccionar
-    public void SelectTile(TileBase tile, TileButtons.TileLayer layer)
-    {
-        selectedTile = tile;
-        selectedLayer = layer;
-    }
+    private Vector3Int currentCell;
+
+    [Header("Ghost Preview")]
+    public SpriteRenderer ghostRenderer;
 
     void Update()
     {
         if (Mouse.current == null) return;
 
-        // colocar
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        Vector3 worldPos = GetMouseWorldPosition();
+        currentCell = grid.WorldToCell(worldPos);
+
+        HandleGhost();
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
-            if (EventSystem.current != null &&
-                EventSystem.current.IsPointerOverGameObject())
-                return;
-
-            PlaceTile();
-        }
-
-        // borrar
-        if (Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            if (EventSystem.current != null &&
-                EventSystem.current.IsPointerOverGameObject())
-                return;
-
-            DeleteTile();
+            TryPlace();
         }
     }
 
-    void PlaceTile()
+    // 🔥 llamado desde UI al tocar el botón
+    public void StartDrag(TileBase tile, TileButtons.TileLayer layer)
     {
-        if (selectedTile == null) return;
+        draggingTile = tile;
+        draggingLayer = layer;
 
-        TileButtons button = FindButton(selectedTile);
+        UpdateGhostSprite();
+    }
 
-        if (button != null && !button.CanUse())
+    void HandleGhost()
+    {
+        if (ghostRenderer == null || draggingTile == null)
         {
-            Debug.Log("No quedan usos para este tile");
+            if (ghostRenderer != null)
+                ghostRenderer.enabled = false;
             return;
         }
 
-        Vector3 worldPos = GetMouseWorldPosition();
-        Vector3Int cellPos = grid.WorldToCell(worldPos);
+        ghostRenderer.enabled = true;
 
-        Tilemap targetMap = (selectedLayer == TileButtons.TileLayer.Base)
+        ghostRenderer.transform.position = Vector3.Lerp(
+            ghostRenderer.transform.position,
+            grid.GetCellCenterWorld(currentCell),
+            25f * Time.deltaTime
+        );
+    }
+
+    void UpdateGhostSprite()
+    {
+        if (ghostRenderer == null) return;
+
+        if (draggingTile is Tile tile)
+            ghostRenderer.sprite = tile.sprite;
+    }
+
+    void TryPlace()
+    {
+        if (draggingTile == null) return;
+
+        TileButtons button = FindButton(draggingTile);
+        if (button != null && !button.CanUse())
+            return;
+
+        Tilemap target = (draggingLayer == TileButtons.TileLayer.Base)
             ? tilemap
             : tilemap_logic;
 
-        targetMap.SetTile(cellPos, selectedTile);
+        target.SetTile(currentCell, draggingTile);
 
         if (button != null)
             button.RegisterPlace();
-    }
 
-    void DeleteTile()
-    {
-        Vector3 worldPos = GetMouseWorldPosition();
-        Vector3Int cellPos = grid.WorldToCell(worldPos);
+        // 🔥 IMPORTANTE: NO seguimos arrastrando automáticamente
+        draggingTile = null;
 
-        // borrar en orden de arriba a abajo
-        TileBase logicTile = tilemap_logic.GetTile(cellPos);
-
-        if (logicTile != null)
-        {
-            tilemap_logic.SetTile(cellPos, null);
-
-            TileButtons button = FindButton(logicTile);
-            if (button != null)
-                button.RegisterRemove();
-
-            return;
-        }
-
-        // si no hay nada arriba borrar abajo
-        TileBase baseTile = tilemap.GetTile(cellPos);
-
-        if (baseTile != null)
-        {
-            tilemap.SetTile(cellPos, null);
-
-            TileButtons button = FindButton(baseTile);
-            if (button != null)
-                button.RegisterRemove();
-        }
+        if (ghostRenderer != null)
+            ghostRenderer.enabled = false;
     }
 
     TileButtons FindButton(TileBase tile)
     {
-        TileButtons[] buttons =
-            Object.FindObjectsByType<TileButtons>(FindObjectsSortMode.None);
+        TileButtons[] buttons = Object.FindObjectsByType<TileButtons>(FindObjectsSortMode.None);
 
         foreach (var b in buttons)
-        {
-            if (b.tile == tile)
-                return b;
-        }
+            if (b.tile == tile) return b;
 
         return null;
     }
@@ -120,13 +106,10 @@ public class GridPainter : MonoBehaviour
     {
         Vector2 mousePos = Mouse.current.position.ReadValue();
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
-
         Plane plane = new Plane(Vector3.forward, Vector3.zero);
 
         if (plane.Raycast(ray, out float distance))
-        {
             return ray.GetPoint(distance);
-        }
 
         return Vector3.zero;
     }

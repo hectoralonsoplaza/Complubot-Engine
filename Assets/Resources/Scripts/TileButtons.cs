@@ -1,41 +1,39 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
-public class TileButtons : MonoBehaviour
+public class TileButtons : MonoBehaviour, IPointerDownHandler
 {
-    public enum TileLayer
-    {
-        Base,
-        Logic
-    }
+    public enum TileLayer { Base, Logic }
 
     [Header("Tiles")]
     public TileBase tile;
 
-    [Header("Capa")]
+    [Header("Layer")]
     public TileLayer layer;
 
-    [Header("Limites")]
+    [Header("Limits")]
     public int maxUses = 7;
+    [HideInInspector] public int currentUses = 0;
 
-    [HideInInspector]
-    public int currentUses = 0;
-
-    [Header("Referencias")]
+    [Header("References")]
     public GridPainter painter;
     public Button button;
 
     void Start()
     {
-        button.onClick.AddListener(SelectTile);
         UpdateState();
     }
 
-    public void SelectTile()
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        painter.SelectTile(tile, layer);
+        painter.StartDrag(tile, layer);
     }
+
+
+
 
     public bool CanUse()
     {

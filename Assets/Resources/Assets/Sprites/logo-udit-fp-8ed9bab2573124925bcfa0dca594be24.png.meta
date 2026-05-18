@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 23591b2fab4514444b9744d276611e98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6796097967128668568
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_0
+  - first:
+      213: 6497094982664931810
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_1
+  - first:
+      213: 7784830292803478335
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_2
+  - first:
+      213: 8418173708020021375
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_3
+  - first:
+      213: 6813930378907670387
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_4
+  - first:
+      213: -4409789927921789737
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_5
+  - first:
+      213: -7586137368277899016
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_6
+  - first:
+      213: -3159232975735879965
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_7
+  - first:
+      213: -2130500396704507771
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_8
+  - first:
+      213: 3833923276014689781
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_9
+  - first:
+      213: -7098657828207819438
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_10
+  - first:
+      213: 2429611172057474838
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_11
+  - first:
+      213: -4712310367457731358
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_12
+  - first:
+      213: -7347815533531071127
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_13
+  - first:
+      213: 7132571048230841006
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_14
+  - first:
+      213: 9148911037859683072
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_15
+  - first:
+      213: 5088148591223420102
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_16
+  - first:
+      213: 2113242692173609187
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_17
+  - first:
+      213: 1031878901885679893
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_18
+  - first:
+      213: -3277163727087607168
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_19
+  - first:
+      213: -36563838289232490
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_20
+  - first:
+      213: 3637902756358007207
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_21
+  - first:
+      213: -728305691117370763
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_22
+  - first:
+      213: -7878201757749480688
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_23
+  - first:
+      213: -9029962621882312163
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_24
+  - first:
+      213: -9189709684176574794
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_25
+  - first:
+      213: 2354724680056436796
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_26
+  - first:
+      213: -5266162532407997275
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_27
+  - first:
+      213: 1470190148949203743
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_28
+  - first:
+      213: 5831201540671021970
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_29
+  - first:
+      213: 5856969836886047754
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_30
+  - first:
+      213: -8160823948006390440
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_31
+  - first:
+      213: 1323798677573022331
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_32
+  - first:
+      213: -7813901670369543450
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_33
+  - first:
+      213: 3403767171226437860
+    second: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 189
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89965750817905e50800000000000000
+      internalID: 6796097967128668568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 185
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e947b1b6715a2a50800000000000000
+      internalID: 6497094982664931810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 136
+        width: 87
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33604fc7e5490c60800000000000000
+      internalID: 7784830292803478335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_3
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 136
+        width: 179
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78f014d26c53d470800000000000000
+      internalID: 8418173708020021375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_4
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 135
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377d80fe391ff8e50800000000000000
+      internalID: 6813930378907670387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_5
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 134
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d45024bc674dc2c0800000000000000
+      internalID: -4409789927921789737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_6
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 135
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8aa72b140a8b690800000000000000
+      internalID: -7586137368277899016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_7
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 135
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6009ec8562824d0800000000000000
+      internalID: -3159232975735879965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_8
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 135
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58859945d21fe62e0800000000000000
+      internalID: -2130500396704507771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_9
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 134
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd15f218e4d43530800000000000000
+      internalID: 3833923276014689781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_10
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 135
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25580a7c0508c7d90800000000000000
+      internalID: -7098657828207819438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_11
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 134
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6176ec40d76b7b120800000000000000
+      internalID: 2429611172057474838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 183
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec9a4c00b28a9eb0800000000000000
+      internalID: -4712310367457731358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_13
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 135
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d78c0e3b0570a90800000000000000
+      internalID: -7347815533531071127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_14
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 67
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaae801149bfbf260800000000000000
+      internalID: 7132571048230841006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_15
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 67
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bd64dad1677fe70800000000000000
+      internalID: 9148911037859683072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_16
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 66
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4b6408f2cbc9640800000000000000
+      internalID: 5088148591223420102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_17
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 67
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8b237380fb35d10800000000000000
+      internalID: 2113242692173609187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_18
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 67
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519bd16e468f15e00800000000000000
+      internalID: 1031878901885679893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_19
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 66
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082e52014fc2582d0800000000000000
+      internalID: -3277163727087607168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_20
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 67
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d352ff1691e7ff0800000000000000
+      internalID: -36563838289232490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_21
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 66
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a92220584d6c7230800000000000000
+      internalID: 3637902756358007207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_22
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 67
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572cd0925d984e5f0800000000000000
+      internalID: -728305691117370763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_23
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 67
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013fb78ed310ba290800000000000000
+      internalID: -7878201757749480688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_24
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 67
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a56a396d02fa280800000000000000
+      internalID: -9029962621882312163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_25
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3
+        width: 87
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b620bd3bb7977080800000000000000
+      internalID: -9189709684176574794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_26
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3
+        width: 89
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38fb92ee99ada020800000000000000
+      internalID: 2354724680056436796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_27
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 0
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac895ef315dae6b0800000000000000
+      internalID: -5266162532407997275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_28
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b556ca62a276410800000000000000
+      internalID: 1470190148949203743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_29
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 0
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293286df7e69ce050800000000000000
+      internalID: 5831201540671021970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_30
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 0
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c35cbf803284150800000000000000
+      internalID: 5856969836886047754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_31
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 0
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85504907bddeebe80800000000000000
+      internalID: -8160823948006390440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_32
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 15
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b723fda22e31f5210800000000000000
+      internalID: 1323798677573022331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_33
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 0
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eabac3a4d17f8390800000000000000
+      internalID: -7813901670369543450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_34
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 0
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e88613553c9c3f20800000000000000
+      internalID: 3403767171226437860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_0: 6796097967128668568
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_1: 6497094982664931810
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_10: -7098657828207819438
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_11: 2429611172057474838
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_12: -4712310367457731358
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_13: -7347815533531071127
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_14: 7132571048230841006
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_15: 9148911037859683072
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_16: 5088148591223420102
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_17: 2113242692173609187
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_18: 1031878901885679893
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_19: -3277163727087607168
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_2: 7784830292803478335
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_20: -36563838289232490
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_21: 3637902756358007207
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_22: -728305691117370763
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_23: -7878201757749480688
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_24: -9029962621882312163
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_25: -9189709684176574794
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_26: 2354724680056436796
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_27: -5266162532407997275
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_28: 1470190148949203743
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_29: 5831201540671021970
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_3: 8418173708020021375
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_30: 5856969836886047754
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_31: -8160823948006390440
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_32: 1323798677573022331
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_33: -7813901670369543450
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_34: 3403767171226437860
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_4: 6813930378907670387
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_5: -4409789927921789737
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_6: -7586137368277899016
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_7: -3159232975735879965
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_8: -2130500396704507771
+      logo-udit-fp-8ed9bab2573124925bcfa0dca594be24_9: 3833923276014689781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

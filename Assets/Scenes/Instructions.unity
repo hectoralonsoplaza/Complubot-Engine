@@ -171,6 +171,12 @@ MonoBehaviour:
   - Language: English
     Text: Avoid stepping on mats of the same color
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: Evita pisar alfombras da mesma cor.
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: Evita trepitjar catifes del mateix color.
+    Object: {fileID: 0}
 --- !u!1 &56349629
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 323.53, y: 100.3}
+  m_AnchoredPosition: {x: 315, y: 100.3}
   m_SizeDelta: {x: 74.44, y: 77.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &56349631
@@ -494,6 +500,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: It blocks your path, forcing you to find a solution
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Bloqu\xE9ache o cami\xF1o obrig\xE1ndote a atopar unha soluci\xF3n."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Et bloqueja el cam\xED obligant-te a trobar una soluci\xF3."
     Object: {fileID: 0}
 --- !u!1 &67601490
 GameObject:
@@ -946,6 +958,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139629650}
   m_CullTransparentMesh: 1
+--- !u!1001 &193650166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 539261674}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_Name
+      value: GALLEGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
 --- !u!1 &196674710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ATR\xC1S"
+  m_text: SEGUINTE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1405,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.86, y: -70.591}
+  m_AnchoredPosition: {x: 233.85999, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446126237
@@ -1541,6 +1610,9 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: NEXT
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: SEGUINTE
     Object: {fileID: 0}
 --- !u!1 &492219392
 GameObject:
@@ -1828,7 +1900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: GALLEGO
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -1848,6 +1920,8 @@ Transform:
   m_Children:
   - {fileID: 683427341}
   - {fileID: 804899422}
+  - {fileID: 864577253}
+  - {fileID: 742311463}
   - {fileID: 761818006}
   - {fileID: 1591438999}
   - {fileID: 1826448358}
@@ -2021,7 +2095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.37001, y: 100.3}
+  m_AnchoredPosition: {x: 236.84001, y: 100.3}
   m_SizeDelta: {x: 74.44, y: 77.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598216911
@@ -2141,7 +2215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164.16, y: 100.3}
+  m_AnchoredPosition: {x: 155.63, y: 100.3}
   m_SizeDelta: {x: 74.44, y: 77.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626466672
@@ -2278,6 +2352,12 @@ MonoBehaviour:
   - Language: English
     Text: BACK
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: SEGUINTE
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "SEG\xDCENT"
+    Object: {fileID: 0}
 --- !u!1 &644952103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,7 +2416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Recoge los objetos como el destornillador y el tornillo '
+  m_text: Recolle os obxectos como o destornillador e o parafuso.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -2608,7 +2688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SIGUIENTE
+  m_text: VOLVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2617,8 +2697,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2700,8 +2780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
-  translationName: NEXT
-  FallbackText: Anterior
+  translationName: anteior
+  FallbackText: ANTERIOR
 --- !u!4 &683427341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
@@ -2742,7 +2822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320.26, y: -70.591}
+  m_AnchoredPosition: {x: 311.25998, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706239103
@@ -2827,6 +2907,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706239101}
   m_CullTransparentMesh: 1
+--- !u!1001 &734350056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 539261674}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_Name
+      value: CATALAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
 --- !u!1 &741113556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +3084,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741113556}
   m_CullTransparentMesh: 1
+--- !u!4 &742311463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+  m_PrefabInstance: {fileID: 734350056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &761818005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3140,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: They mark the beginning and the end of the road
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Indican o inicio e o final do cami\xF1o."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Indiquen l'inici i el final del cam\xED."
     Object: {fileID: 0}
 --- !u!4 &804899422 stripped
 Transform:
@@ -3055,6 +3203,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: BACK
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: VOLVER
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: TORNAR
     Object: {fileID: 0}
 --- !u!1 &836907204
 GameObject:
@@ -3210,6 +3364,11 @@ MonoBehaviour:
   translationName: felcha uncion
   FallbackText: "Indican el inicio y la direcci\xF3n en la que empiza el robot izquierda
     o derecha"
+--- !u!4 &864577253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+  m_PrefabInstance: {fileID: 193650166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &958356354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,6 +3420,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: They are the ground where you create the robot's path
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Son o chan onde creas o cami\xF1o do robot."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "S\xF3n el s\xF2l on crees el cam\xED del robot."
     Object: {fileID: 0}
 --- !u!1 &1006113522
 GameObject:
@@ -4194,6 +4359,13 @@ MonoBehaviour:
     Text: They indicate the starting point and whether the robot starts to the left
       or the right
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Indican o inicio e a direcci\xF3n na que empeza o robot, esquerda ou dereita."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Indiquen l'inici i la direcci\xF3 en la qual comen\xE7a el robot, esquerra
+      o dreta."
+    Object: {fileID: 0}
 --- !u!1 &1130826248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,7 +4677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Evita pisar alfombrillas del mismo color   '
+  m_text: Evita pisar alfombras da mesma cor.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -4601,7 +4773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -138}
+  m_AnchoredPosition: {x: 269, y: -138}
   m_SizeDelta: {x: 227.73, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245663265
@@ -4670,6 +4842,12 @@ MonoBehaviour:
   - Language: English
     Text: INSTRUCTIONS
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "INSTRUCI\xD3NS"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: INSTRUCCIONS
+    Object: {fileID: 0}
 --- !u!1 &1299279998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4728,7 +4906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Indican el inicio y el final del camino
+  m_text: "Indican o inicio e o final do cami\xF1o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -4880,7 +5058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: El robot puede pasar por encima de un prohibido
+  m_text: O robot pode pasar por enriba dun prohibido.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -5085,6 +5263,13 @@ MonoBehaviour:
     Text: They mark the end of the route and must be the same color as the starting
       arrow
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: Indican o final do percorrido e deben ter a mesma cor que a frecha de inicio.
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: Indiquen el final del recorregut i han de tenir el mateix color que la
+      fletxa d'inici.
+    Object: {fileID: 0}
 --- !u!1 &1345462202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5322,12 @@ MonoBehaviour:
   - Language: English
     Text: EXIT
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "SA\xCDR"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: SORTIR
+    Object: {fileID: 0}
 --- !u!1 &1368417448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,7 +5363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 237, y: -167}
+  m_AnchoredPosition: {x: 225, y: -167}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1368417450
@@ -5195,8 +5386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: They mark the end of the route and must be the same color as the starting
-    arrow
+  m_text: Indican o final do percorrido e deben ter a mesma cor que a frecha de inicio.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -5469,7 +5659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INSTRUCCIONES
+  m_text: "INSTRUCI\xD3NS"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 639fd36a67bd9294389a4800c3a75cba, type: 2}
   m_sharedMaterial: {fileID: -4180226674047088984, guid: 639fd36a67bd9294389a4800c3a75cba, type: 2}
@@ -5735,6 +5925,12 @@ MonoBehaviour:
   - Language: English
     Text: Collect the items, such as the screwdriver and the screw
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: Recolle os obxectos como o destornillador e o parafuso.
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Recull els objectes com el tornav\xEDs i el cargol."
+    Object: {fileID: 0}
 --- !u!1 &1620389411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,8 +5989,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Indican la direcci\xF3n para avanzar, retroceder, girar a la derecha o
-    a la izquierda. Giras sobre la misma alfombrilla, pero sin avanzar."
+  m_text: "Indican a direcci\xF3n para avanzar, retroceder, xirar \xE1 dereita ou
+    \xE1 esquerda. Xiras sobre a mesma alfombra, pero sen avanzar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -5860,7 +6056,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -16.887009, y: 0, z: 0.44573975, w: 0}
+  m_margin: {x: -29.96399, y: 0, z: 15.900253, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6315,7 +6511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 165.19, y: -70.591}
+  m_AnchoredPosition: {x: 156.18999, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693209254
@@ -6435,7 +6631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 399.86, y: -70.591}
+  m_AnchoredPosition: {x: 390.85995, y: -70.591}
   m_SizeDelta: {x: 74.87, y: 80.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695367896
@@ -6719,7 +6915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 401.7, y: 100.3}
+  m_AnchoredPosition: {x: 393.17, y: 100.3}
   m_SizeDelta: {x: 74.44, y: 77.394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803069215
@@ -6856,6 +7052,12 @@ MonoBehaviour:
   - Language: English
     Text: The robot can go past a "No Entry" sign
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: O robot pode pasar por enriba dun prohibido.
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: El robot pot passar per damunt d'un prohibit.
+    Object: {fileID: 0}
 --- !u!1001 &1842272531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6971,8 +7173,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Se realiza una acci\xF3n divertida hablada por el grupo (Ejemplo: Ponte
-    a bailar) "
+  m_text: "Real\xEDzase unha acci\xF3n divertida falada polo grupo (Exemplo: Thinv\xEDtate
+    a bailar / Ponte a bailar)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -7263,6 +7465,14 @@ MonoBehaviour:
   - Language: English
     Text: 'A fun action is performed as suggested by the group (Example: Start Dancing)'
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Real\xEDzase unha acci\xF3n divertida falada polo grupo (Exemplo: Thinv\xEDtate
+      a bailar / Ponte a bailar)."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Es realitza una acci\xF3 divertida parlada pel grup (Exemple: Posa't a
+      ballar)."
+    Object: {fileID: 0}
 --- !u!1 &1885347772
 GameObject:
   m_ObjectHideFlags: 0
@@ -7512,6 +7722,14 @@ MonoBehaviour:
     Text: They indicate the direction to move forward, go backward, or turn right
       and left. You turn on the mat itself without moving forward
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Indican a direcci\xF3n para avanzar, retroceder, xirar \xE1 dereita ou
+      \xE1 esquerda. Xiras sobre a mesma alfombra, pero sen avanzar."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Indiquen la direcci\xF3 per avan\xE7ar, retrocedir, girar a la dreta o
+      a l'esquerra. Gires sobre la mateixa catifa, per\xF2 sense avan\xE7ar."
+    Object: {fileID: 0}
 --- !u!1 &1957886532
 GameObject:
   m_ObjectHideFlags: 0
@@ -7570,7 +7788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SALIR
+  m_text: "SA\xCDR"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -7717,6 +7935,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Missions to fix the robot
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Misi\xF3ns para arranxar o robot."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: Missions per arreglar el robot.
     Object: {fileID: 0}
 --- !u!1 &2053014765
 GameObject:

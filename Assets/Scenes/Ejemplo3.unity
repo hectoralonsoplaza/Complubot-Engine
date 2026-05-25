@@ -857,6 +857,28 @@ MonoBehaviour:
       roja, despu\xE9s gira a la derecha y avanza hasta llegar al robot morado.\n6.
       Cuando arregles el robot morado ya habr\xE1s terminado."
     Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "1: Comen\xE7a a la fletxa lila i ves recte. Hi ha un senyal de \"Prohibit
+      el pas\", aix\xED que utilitza un pont per saltar per damunt del quadrat!\n2:
+      Un cop hagis passat el senyal i arribis al quadrat vermell, gira a la dreta
+      i mou-te cap al quadrat verd.\n3: Al quadrat verd trobar\xE0s un tornav\xEDs.
+      L'has de recollir!\n4: Despr\xE9s, gira a l'esquerra i segueix recte fins que
+      trobis un cargol. Recolleix-lo tamb\xE9! (Si no tens el tornav\xEDs i el cargol,
+      no podr\xE0s arreglar el robot).\n5: Gira a l'esquerra i mou-te cap al quadrat
+      vermell. Despr\xE9s, gira a la dreta i segueix recte fins que arribis al robot
+      lila.\n6: Un cop hagis arreglat el robot lila, haur\xE0s acabat!"
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "1: Comeza na frecha lila y vai recto. Hai un sinal de \"Prohibido o paso\",
+      as\xED que usa unha ponte para saltar por enriba do cadrado!\n2: Unha vez que
+      pases o sinal e chegues ao cadrado vermello, xira \xE1 dereita e m\xF3vete
+      cara ao cadrado verde.\n3: No cadrado verde atopar\xE1s un destornillador.
+      Telo que recoller!\n4: Despois, xira \xE1 esquerda e segue recto ata que atopes
+      un parafuso. Rec\xF3lleo tam\xE9n! (Se non tes o destornillador e o parafuso,
+      no poder\xE1s arranxar o robot).\n5: Xira \xE1 esquerda e m\xF3vete cara ao
+      cadrado vermello. Despois, xira \xE1 dereita e segue recto ata que chegues
+      ao robot lila.\n6: Unha vez que arranxes o robot lila, xa remataches!"
+    Object: {fileID: 0}
 --- !u!1 &604434648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VER EXPLICACI\xD3N"
+  m_text: SEE EXPLANATION
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1599,6 +1621,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 111064712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &941740498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1765120293}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_Name
+      value: GALLEGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
 --- !u!1001 &960245252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1804,6 +1883,12 @@ MonoBehaviour:
   - Language: English
     Text: EXIT BACK
     Object: {fileID: 0}
+  - Language: CATALAN
+    Text: ENRERE
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: PECHAR
+    Object: {fileID: 0}
 --- !u!1 &1050103865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +1980,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &1118306643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+  m_PrefabInstance: {fileID: 2020462162}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1135658368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,6 +2046,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: d723c6557bd6de145a2fad37a6fe8229, type: 3}
   m_PrefabInstance: {fileID: 1135658368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1199784136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+  m_PrefabInstance: {fileID: 941740498}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1317562430
 GameObject:
@@ -2498,7 +2593,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EJEMPLO 3
+  m_text: 'EXAMPLE 3
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2789,7 +2886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: English
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -2809,6 +2906,8 @@ Transform:
   m_Children:
   - {fileID: 1135658369}
   - {fileID: 960245253}
+  - {fileID: 1118306643}
+  - {fileID: 1199784136}
   - {fileID: 2075163300}
   - {fileID: 1049166033}
   - {fileID: 2077247216}
@@ -3086,7 +3185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SALIR ATR\xC1S"
+  m_text: EXIT BACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -3332,6 +3431,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 111064712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2020462162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1765120293}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_Name
+      value: CATALAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
 --- !u!1 &2075163299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3386,6 +3542,12 @@ MonoBehaviour:
 
 '
     Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: EXEMPLO 3
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: EXEMPLE 3
+    Object: {fileID: 0}
 --- !u!1 &2077247215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,6 +3599,12 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: SEE EXPLANATION
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "VEURE L'EXPLICACI\xD3"
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "VER A EXPLICACI\xD3N"
     Object: {fileID: 0}
 --- !u!1 &2132540648
 GameObject:

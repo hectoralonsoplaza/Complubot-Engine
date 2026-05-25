@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: English
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -388,6 +388,8 @@ Transform:
   m_Children:
   - {fileID: 1208629202}
   - {fileID: 1299744695}
+  - {fileID: 540427995}
+  - {fileID: 397391846}
   - {fileID: 1236752328}
   - {fileID: 1108196944}
   - {fileID: 1537261142}
@@ -567,6 +569,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365908964}
   m_CullTransparentMesh: 1
+--- !u!1001 &397391845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 66131995}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_Name
+      value: GALLEGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+--- !u!4 &397391846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 6ce49b6a86dedf943ab7d45ec2375ae0, type: 3}
+  m_PrefabInstance: {fileID: 397391845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414816828
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +855,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518626527}
   m_CullTransparentMesh: 1
+--- !u!1001 &540427994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 66131995}
+    m_Modifications:
+    - target: {fileID: 765358623864573794, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_Name
+      value: CATALAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.07384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+--- !u!4 &540427995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1527055450098318974, guid: 3ac841b7dad7d0a45bd0e21e9da426a1, type: 3}
+  m_PrefabInstance: {fileID: 540427994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &637622349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VER EXPLICACI\xD3N"
+  m_text: SEE EXPLANATION
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1405,6 +1531,12 @@ MonoBehaviour:
   - Language: English
     Text: EXIT BACK
     Object: {fileID: 0}
+  - Language: CATALAN
+    Text: ENRERE
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: PECHAR
+    Object: {fileID: 0}
 --- !u!1001 &1208629201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1520,6 +1652,12 @@ MonoBehaviour:
     Text: 'EXAMPLE 2
 
 '
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: EXEMPLE 2
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: EXEMPLO 2
     Object: {fileID: 0}
 --- !u!1001 &1299744694
 PrefabInstance:
@@ -1720,6 +1858,21 @@ MonoBehaviour:
       un prohibido, por lo que usas un puente que te permite saltar una casilla..\n4.
       Despu\xE9s de saltar la casilla, avanzas recto hasta el final donde est\xE1
       el robot azul."
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "1.Comen\xE7a a la fletxa blava i ves recte fins al quadrat taronja.\n2:
+      Al quadrat taronja, gira a l'esquerra i mou-te cap al quadrat vermell.\n3:
+      Al quadrat vermell, gira a l'esquerra. No pots anar cap endavant perqu\xE8
+      est\xE0 bloquejat, aix\xED que utilitza un pont para saltar per damunt del
+      quadrat!\n4: Despr\xE9s de saltar, segueix recte fins que arribis al robot
+      blau al final."
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "1: Comeza na frecha azul e vai recto ata o cadrado laranxa.\n2: No cadrado
+      laranxa, xira \xE1 esquerda e m\xF3vete cara ao cadrado vermello.\n3: No cadrado
+      vermello, xira \xE1 esquerda. Non podes avanzar porque est\xE1 bloqueado, as\xED
+      que usa unha ponte para saltar por enriba do cadrado!\n4: Despois de saltar,
+      segue recto ata que chegues ao robot azul ao final."
     Object: {fileID: 0}
 --- !u!1 &1457865463
 GameObject:
@@ -1955,6 +2108,12 @@ MonoBehaviour:
   - Language: English
     Text: SEE EXPLANATION
     Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "VEURE L'EXPLICACI\xD3"
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "VER A EXPLICACI\xD3N"
+    Object: {fileID: 0}
 --- !u!1 &1586516230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +2251,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EJEMPLO 2
+  m_text: 'EXAMPLE 2
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2101,8 +2262,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278238942
-  m_fontColor: {r: 0.8705883, g: 0.74509805, b: 0, a: 1}
+    rgba: 4280285438
+  m_fontColor: {r: 0.995283, g: 0.9706402, b: 0.122063, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2833,7 +2994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SALIR ATR\xC1S"
+  m_text: EXIT BACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}

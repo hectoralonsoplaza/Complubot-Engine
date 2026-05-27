@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: English
+  currentLanguage: Spanish
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SEE EXPLANATION
+  m_text: "VER EXPLICACI\xD3N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1738,7 +1738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1348792893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,9 +2251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EXAMPLE 2
-
-'
+  m_text: EJEMPLO 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2994,7 +2992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT BACK
+  m_text: "SALIR ATR\xC1S"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -3191,11 +3189,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Start at the blue arrow and go straight to the orange square.\n2. At
-    the orange square, turn left and move to the red square.\n3. At the red square,
-    turn left. You can\u2019t go forward because it\u2019s blocked, so use a bridge
-    to jump over the square!\n4. After jumping, go straight until you reach the blue
-    robot at the end."
+  m_text: "1. Empiezas en la flecha azul y avanzas recto hasta la casilla naranja\n2.
+    En la casilla naranja, giras a la izquierda y avanzas a la casilla roja.\n3.
+    En la casilla roja, giras a la izquierda, pero no puedes avanzar porque hay un
+    prohibido, por lo que usas un puente que te permite saltar una casilla..\n4.
+    Despu\xE9s de saltar la casilla, avanzas recto hasta el final donde est\xE1 el
+    robot azul."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}

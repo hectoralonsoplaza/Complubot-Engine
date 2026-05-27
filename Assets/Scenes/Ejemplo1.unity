@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: English
+  currentLanguage: Spanish
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -549,7 +549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &454907291
 RectTransform:
   m_ObjectHideFlags: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT BACK
+  m_text: "SALIR ATR\xC1S"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SEE EXPLANATION
+  m_text: "VER EXPLICACI\xD3N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2025,17 +2025,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Start on the blue arrow and walk straight ahead.
-
-    2. Once you hit
-    the red square, turn right!
-
-    3. Go forward one spot, then turn left.
-
-    4.
-    Keep going straight until you find the blue robot at the end!'
+  m_text: "1. Empiezas en la flecha azul y avanzas recto por todas las casillas.\n2.
+    Cuando llegas a la casilla roja, giras a la derecha.\n3. Avanzas una casilla
+    y luego giras a la izquierda.\n4. Despu\xE9s sigues recto hasta llegar al robot
+    azul, que es el final"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2102,7 +2097,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -972.8234, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1317562433
@@ -2693,9 +2688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'EXAMPLE 1
-
-'
+  m_text: EJEMPLO 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}

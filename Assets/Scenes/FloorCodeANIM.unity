@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 18748664}
   - component: {fileID: 18748666}
   - component: {fileID: 18748665}
+  - component: {fileID: 18748667}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -176,9 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SALIR
-
-'
+  m_text: "SA\xCDR"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -205,8 +204,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22.86
+  m_fontSizeBase: 22.86
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -244,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.881813, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -258,6 +257,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18748663}
   m_CullTransparentMesh: 1
+--- !u!114 &18748667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18748663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: salir
+  FallbackText: 'SALIR
+
+'
 --- !u!1 &59768736
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +284,7 @@ GameObject:
   - component: {fileID: 59768737}
   - component: {fileID: 59768739}
   - component: {fileID: 59768738}
+  - component: {fileID: 59768740}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -395,6 +411,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59768736}
   m_CullTransparentMesh: 1
+--- !u!114 &59768740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59768736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: BORRARULTIMAACCION
+  FallbackText: "BORRAR \xDALTIMA ACCI\xD3N"
 --- !u!1 &66535502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1194,8 @@ MonoBehaviour:
   bubble1: {fileID: 912469242}
   dialogueText1: {fileID: 1973033336}
   typingSpeed: 0.03
+  audioSource: {fileID: 0}
+  typingSound: {fileID: 0}
 --- !u!1 &266624218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1292,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266624218}
   m_CullTransparentMesh: 1
+--- !u!1 &268634660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268634661}
+  - component: {fileID: 268634662}
+  m_Layer: 0
+  m_Name: BORRARULTIMAACCION
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268634661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268634660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268634662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268634660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: GALLEGO
+    Text: "BORRAR \xDALTIMA ACCI\xD3N"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "ESBORRAR \xDALTIMA ACCI\xD3"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "BORRAR \xDALTIMA ACCI\xD3N"
+    Object: {fileID: 0}
+  - Language: English
+    Text: UNDO
+    Object: {fileID: 0}
 --- !u!1 &396910776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,6 +3429,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841844086}
   m_CullTransparentMesh: 1
+--- !u!1 &855873808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 855873809}
+  - component: {fileID: 855873810}
+  m_Layer: 0
+  m_Name: PROGRAMAR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855873809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855873808}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855873810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855873808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: PROGRAM
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: PROGRAMAR
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: PROGRAMAR
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: PROGRAMAR
+    Object: {fileID: 0}
 --- !u!1 &858469944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,6 +3498,7 @@ GameObject:
   - component: {fileID: 858469945}
   - component: {fileID: 858469947}
   - component: {fileID: 858469946}
+  - component: {fileID: 858469948}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3476,6 +3625,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858469944}
   m_CullTransparentMesh: 1
+--- !u!114 &858469948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858469944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: PROGRAMAR
+  FallbackText: PROGRAMAR
 --- !u!1 &865958070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,7 +4029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &912469243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3876,7 +4039,7 @@ RectTransform:
   m_GameObject: {fileID: 912469242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2342, y: 1.2342, z: 1.2342}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1973033338}
@@ -4737,6 +4900,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137735902}
   m_CullTransparentMesh: 1
+--- !u!1 &1172769453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172769454}
+  - component: {fileID: 1172769455}
+  m_Layer: 0
+  m_Name: GRABAR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172769454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172769453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172769455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172769453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: RECORD
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: GRABAR
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: GRAVAR
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: GRAVAR
+    Object: {fileID: 0}
 --- !u!1 &1214847898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,6 +5643,122 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892170701}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1295874820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295874821}
+  - component: {fileID: 1295874822}
+  m_Layer: 0
+  m_Name: DETENER GRABACION
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1295874821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295874820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1295874822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295874820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: STOP RECORDING
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "DETENER GRABACI\xD3N"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "ATURDIR GRAVACI\xD3"
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "DETE\xD1ER GRAVACI\xD3N"
+    Object: {fileID: 0}
+--- !u!1 &1342614424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342614425}
+  - component: {fileID: 1342614426}
+  m_Layer: 0
+  m_Name: salir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342614425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342614424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342614426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342614424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: EXIT
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: SALIR
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: SORTIR
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "SA\xCDR"
+    Object: {fileID: 0}
 --- !u!1 &1344876808
 GameObject:
   m_ObjectHideFlags: 0
@@ -5646,6 +5983,7 @@ GameObject:
   - component: {fileID: 1401512393}
   - component: {fileID: 1401512395}
   - component: {fileID: 1401512394}
+  - component: {fileID: 1401512396}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5772,6 +6110,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401512392}
   m_CullTransparentMesh: 1
+--- !u!114 &1401512396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401512392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: BORRAR
+  FallbackText: BORRAR
 --- !u!1 &1413854160
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,7 +6153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: GALLEGO
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -5823,6 +6175,14 @@ Transform:
   - {fileID: 1391240354}
   - {fileID: 1753572419}
   - {fileID: 1534714388}
+  - {fileID: 1626624454}
+  - {fileID: 1487984451}
+  - {fileID: 1342614425}
+  - {fileID: 1172769454}
+  - {fileID: 1295874821}
+  - {fileID: 855873809}
+  - {fileID: 1646193989}
+  - {fileID: 268634661}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422989897
@@ -6050,6 +6410,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892170701}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1487984450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487984451}
+  - component: {fileID: 1487984452}
+  m_Layer: 0
+  m_Name: Dialogo_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1487984451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487984450}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487984452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487984450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: With these buttons you can program the circuit and erase if you make a
+      mistake! Good Luck!
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "\xA1Con estos botones puedes programar el circuito y borrar si te equivocas!
+      \xA1Suerte!"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: Amb aquests botons pots programar el circuit i esborrar si t'equivoques!
+      Sort!
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Con estes bot\xF3ns podes programar o circu\xEDto e borrar se te equivocas!
+      Sort\xE9!"
+    Object: {fileID: 0}
 --- !u!1 &1514605715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,6 +7395,64 @@ MonoBehaviour:
   currentUses: 0
   painter: {fileID: 1112734603}
   button: {fileID: 1555144695}
+--- !u!1 &1626624453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626624454}
+  - component: {fileID: 1626624455}
+  m_Layer: 0
+  m_Name: Dialogo_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626624454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626624453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626624455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626624453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: English
+    Text: Drag the pieces onto the grid to build the circuit!
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: "Arrastra as pezas \xE1 cuadr\xEDcula para facer o circu\xEDto!"
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: "Arrossega les peces a la quadr\xEDcula per fer el circuit!"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "\xA1Arrastra las piezas a la cuadr\xEDcula para hacer el circuito!"
+    Object: {fileID: 0}
 --- !u!1 &1640704317
 GameObject:
   m_ObjectHideFlags: 0
@@ -7019,6 +7499,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1646193988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646193989}
+  - component: {fileID: 1646193990}
+  m_Layer: 0
+  m_Name: BORRAR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1646193989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646193988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1413854162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1646193990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanPhrase
+  data: 0
+  entries:
+  - Language: Spanish
+    Text: BORRAR
+    Object: {fileID: 0}
+  - Language: English
+    Text: CLEAR
+    Object: {fileID: 0}
+  - Language: CATALAN
+    Text: ESBORRAR
+    Object: {fileID: 0}
+  - Language: GALLEGO
+    Text: BORRAR
+    Object: {fileID: 0}
 --- !u!1 &1656009512
 GameObject:
   m_ObjectHideFlags: 0
@@ -7848,7 +8386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.464}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -812.8461, y: -463.7806}
+  m_AnchoredPosition: {x: -813, y: -464}
   m_SizeDelta: {x: 109.63, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882335369
@@ -8083,9 +8621,9 @@ RectTransform:
   m_Father: {fileID: 1886698951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4, y: 24.97}
-  m_SizeDelta: {x: 207.78, y: 127.59}
+  m_AnchorMax: {x: 0.56530976, y: 0.5}
+  m_AnchoredPosition: {x: -8.4926, y: 30}
+  m_SizeDelta: {x: 166.78, y: 113.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920049974
 MonoBehaviour:
@@ -8134,8 +8672,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8462,6 +9000,7 @@ GameObject:
   - component: {fileID: 1959466980}
   - component: {fileID: 1959466982}
   - component: {fileID: 1959466981}
+  - component: {fileID: 1959466983}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8508,7 +9047,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GRABAR
+  m_text: GRAVAR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -8588,6 +9127,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959466979}
   m_CullTransparentMesh: 1
+--- !u!114 &1959466983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959466979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: GRABAR
+  FallbackText: GRABAR
 --- !u!1 &1973033335
 GameObject:
   m_ObjectHideFlags: 0
@@ -8653,8 +9206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8720,10 +9273,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 912469243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.4231549, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4, y: 24.97}
-  m_SizeDelta: {x: 207.78, y: 127.59}
+  m_AnchoredPosition: {x: 9.9925, y: 40}
+  m_SizeDelta: {x: 160.18, y: 104.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1989944366
 GameObject:
@@ -9330,6 +9883,7 @@ GameObject:
   - component: {fileID: 2113116598}
   - component: {fileID: 2113116600}
   - component: {fileID: 2113116599}
+  - component: {fileID: 2113116601}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9376,7 +9930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "DETENER GRABACI\xD3N"
+  m_text: "DETE\xD1ER GRAVACI\xD3N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -9456,6 +10010,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113116597}
   m_CullTransparentMesh: 1
+--- !u!114 &2113116601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113116597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanLocalization.TMP::Lean.Localization.LeanLocalizedTextMeshProUGUI
+  translationName: DETENER GRABACION
+  FallbackText: "DETENER GRABACI\xD3N"
 --- !u!1 &2119997173
 GameObject:
   m_ObjectHideFlags: 0

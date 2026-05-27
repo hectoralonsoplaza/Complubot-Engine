@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: CATALAN
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -1264,7 +1264,7 @@ RectTransform:
   m_GameObject: {fileID: 839285218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.77019, y: 0.77019, z: 0.77019}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 518626528}
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VER EXPLICACI\xD3N"
+  m_text: "VEURE L'EXPLICACI\xD3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2251,7 +2251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EJEMPLO 2
+  m_text: EXEMPLE 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SALIR ATR\xC1S"
+  m_text: ENRERE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -3189,12 +3189,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Empiezas en la flecha azul y avanzas recto hasta la casilla naranja\n2.
-    En la casilla naranja, giras a la izquierda y avanzas a la casilla roja.\n3.
-    En la casilla roja, giras a la izquierda, pero no puedes avanzar porque hay un
-    prohibido, por lo que usas un puente que te permite saltar una casilla..\n4.
-    Despu\xE9s de saltar la casilla, avanzas recto hasta el final donde est\xE1 el
-    robot azul."
+  m_text: "1.Comen\xE7a a la fletxa blava i ves recte fins al quadrat taronja.\n2:
+    Al quadrat taronja, gira a l'esquerra i mou-te cap al quadrat vermell.\n3: Al
+    quadrat vermell, gira a l'esquerra. No pots anar cap endavant perqu\xE8 est\xE0
+    bloquejat, aix\xED que utilitza un pont para saltar per damunt del quadrat!\n4:
+    Despr\xE9s de saltar, segueix recte fins que arribis al robot blau al final."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}

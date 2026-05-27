@@ -30677,7 +30677,7 @@ AnimationClip:
   m_Events:
   - time: 6.0666666
     functionName: ShowDialogue
-    data: "\xA1Arrastra las piezas a la cuadr\xEDcula para hacer el circuito! "
+    data: Dialogo_1
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
@@ -30691,7 +30691,7 @@ AnimationClip:
     messageOptions: 0
   - time: 12.616667
     functionName: ShowDialogue2
-    data: "\xA1Con estos botones puedes programar el circuito y borrar si te equivocas!"
+    data: Dialogo_2
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

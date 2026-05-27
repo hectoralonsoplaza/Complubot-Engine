@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LeanLocalization::Lean.Localization.LeanLocalization
-  currentLanguage: Spanish
+  currentLanguage: CATALAN
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SALIR ATR\xC1S"
+  m_text: ENRERE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -1316,14 +1316,14 @@ RectTransform:
   m_GameObject: {fileID: 839285218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74716854, y: 0.74716854, z: 0.74716854}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 518626528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839285220
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VER EXPLICACI\xD3N"
+  m_text: "VEURE L'EXPLICACI\xD3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
@@ -2025,10 +2025,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Empiezas en la flecha azul y avanzas recto por todas las casillas.\n2.
-    Cuando llegas a la casilla roja, giras a la derecha.\n3. Avanzas una casilla
-    y luego giras a la izquierda.\n4. Despu\xE9s sigues recto hasta llegar al robot
-    azul, que es el final"
+  m_text: "1: Comen\xE7a a la fletxa blava i camina recte cap endavant.\n2: Un cop
+    arribis al quadrat vermell, gira a la dreta!\n3: Avan\xE7a una posici\xF3 i despr\xE9s
+    gira a l'esquerra.\n4: Segueix recte fins que trobis el robot blau al final!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
   m_sharedMaterial: {fileID: -2063570501242950119, guid: b7102cbcca5c5b04db151ec962f18746, type: 2}
@@ -2688,7 +2687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EJEMPLO 1
+  m_text: EXEMPLO 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}
   m_sharedMaterial: {fileID: -4158772961719731325, guid: f0c6ece436e63f446b3bdb3852527528, type: 2}

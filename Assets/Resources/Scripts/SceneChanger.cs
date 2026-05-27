@@ -25,4 +25,12 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Ejemplos");
 
     }
+
+    public void CambiarAFloorCodeANIM()
+    {
+        SceneManager.LoadScene("FloorCodeANIM");
+
+    }
+
+
 }

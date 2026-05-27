@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Ejemplos.unity
     guid: 634d2b23c57ed954eb5d4b51bcd66d4b
   - enabled: 1
+    path: Assets/Scenes/FloorCodeANIM.unity
+    guid: 2a331653fee55b141b4760cc5dc7cc4e
+  - enabled: 1
     path: Assets/Scenes/Ejemplo1.unity
     guid: a000d6f7d10794143813953cb7bb224d
   - enabled: 1

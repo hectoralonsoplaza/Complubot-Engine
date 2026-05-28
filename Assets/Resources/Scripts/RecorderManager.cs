@@ -1,66 +1,132 @@
 ﻿using UnityEngine;
-using UnityEditor.Recorder;
-using UnityEditor.Recorder.Input;
-using UnityEditor.Recorder.Encoder;
+using System.Collections;
+using System.Diagnostics;
 using System.IO;
 
 public class RecorderManager : MonoBehaviour
 {
-    RecorderControllerSettings controllerSettings;
-    RecorderController recorderController;
+    [Header("Configuración del Vídeo")]
+    public int videoWidth = 1024;   
+    public int videoHeight = 576;
+    public int frameRate = 24;
 
-    bool isRecording;
+    private Process ffmpegProcess;
+    private BinaryWriter ffmpegWriter;
+    private bool isRecording = false;
+    private Texture2D screenShot;
+    private RenderTexture rt;
 
     public void StartRecording()
     {
         if (isRecording) return;
 
-        controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
-        recorderController = new RecorderController(controllerSettings);
-
-        var movieRecorder = ScriptableObject.CreateInstance<MovieRecorderSettings>();
-
-        movieRecorder.name = "CircuitRecorder";
-        movieRecorder.Enabled = true;
-
-        var encoder = new CoreEncoderSettings
-        {
-            EncodingQuality = CoreEncoderSettings.VideoEncodingQuality.High
-        };
-
-        movieRecorder.EncoderSettings = encoder;
-
-        movieRecorder.ImageInputSettings = new GameViewInputSettings
-        {
-            OutputWidth = 1920,
-            OutputHeight = 1080
-        };
-
-        movieRecorder.AudioInputSettings.PreserveAudio = true;
-
         string desktopPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
-        string fileName = "CircuitVideo_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
+        string fileName = "CircuitVideo_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".mp4";
+        string outputPath = Path.Combine(desktopPath, fileName);
 
-        movieRecorder.OutputFile = Path.Combine(desktopPath, fileName);
+        string ffmpegPath = Path.Combine(Application.streamingAssetsPath, "ffmpeg.exe");
 
-        controllerSettings.AddRecorderSettings(movieRecorder);
-        controllerSettings.SetRecordModeToManual();
+        if (!File.Exists(ffmpegPath))
+        {
+            UnityEngine.Debug.LogError("No se encontró ffmpeg.exe en la carpeta Assets/StreamingAssets/");
+            return;
+        }
 
-        recorderController.PrepareRecording();
-        recorderController.StartRecording();
+        
+        string arguments = $"-f rawvideo -pix_fmt rgba -s {videoWidth}x{videoHeight} -r {frameRate} -i - " +
+                           $"-c:v libx264 -pix_fmt yuv420p -preset ultrafast -tune zerolatency -y \"{outputPath}\"";
+
+        ProcessStartInfo startInfo = new ProcessStartInfo
+        {
+            FileName = ffmpegPath,
+            Arguments = arguments,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+            RedirectStandardInput = true
+        };
+
+        ffmpegProcess = new Process { StartInfo = startInfo };
+        ffmpegProcess.Start();
+        ffmpegWriter = new BinaryWriter(ffmpegProcess.StandardInput.BaseStream);
+
+        
+        rt = new RenderTexture(videoWidth, videoHeight, 0, RenderTextureFormat.ARGB32);
+        rt.Create();
+        screenShot = new Texture2D(videoWidth, videoHeight, TextureFormat.RGBA32, false);
 
         isRecording = true;
-
-        Debug.Log(" Grabacion iniciada");
+        StartCoroutine(RecordFrameCoroutine());
+        UnityEngine.Debug.Log("Grabación nativa de pantalla iniciada.");
     }
 
     public void StopRecording()
     {
         if (!isRecording) return;
 
-        recorderController.StopRecording();
         isRecording = false;
+        StopAllCoroutines();
 
-        Debug.Log(" Grabacion finalizada");
+        
+        if (rt != null) { rt.Release(); Destroy(rt); }
+        if (screenShot != null) Destroy(screenShot);
+
+        
+        if (ffmpegWriter != null)
+        {
+            ffmpegWriter.Flush();
+            ffmpegWriter.Close();
+        }
+
+        if (ffmpegProcess != null && !ffmpegProcess.HasExited)
+        {
+            ffmpegProcess.WaitForExit();
+            ffmpegProcess.Dispose();
+        }
+
+        UnityEngine.Debug.Log("Grabación finalizada con éxito.");
+    }
+
+    private IEnumerator RecordFrameCoroutine()
+    {
+        float timeBetweenFrames = 1f / frameRate;
+
+        while (isRecording)
+        {
+            
+            yield return new WaitForEndOfFrame();
+
+            
+            ScreenCapture.CaptureScreenshotIntoRenderTexture(rt);
+
+            
+            RenderTexture oldActive = RenderTexture.active;
+            RenderTexture.active = rt;
+
+            screenShot.ReadPixels(new Rect(0, 0, videoWidth, videoHeight), 0, 0);
+            screenShot.Apply();
+
+            RenderTexture.active = oldActive;
+
+            
+            byte[] rawBytes = screenShot.GetRawTextureData();
+
+            
+            try
+            {
+                ffmpegWriter.Write(rawBytes);
+            }
+            catch (System.Exception e)
+            {
+                UnityEngine.Debug.LogError("Error FFmpeg: " + e.Message);
+                StopRecording();
+            }
+
+            yield return new WaitForSecondsRealtime(timeBetweenFrames);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        if (isRecording) StopRecording();
     }
 }
